@@ -1,0 +1,28 @@
+# Rust build artifacts
+/target
+*.pdb
+**/*.rs.bk
+Cargo.lock
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Generated playlists (user-specific)
+*.m3u8
+
+# IDE/Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug/test outputs
+debug/
+*.log

@@ -1,0 +1,29 @@
+[package]
+name = "psp_playlist_maker"
+version = "0.1.0"
+edition = "2021"
+authors = ["PSP Playlist Maker Contributors"]
+description = "A GUI application for managing music playlists for PlayStation Portable (PSP)"
+license = "MIT"
+repository = "https://github.com/yourusername/psp_playlist_maker"
+keywords = ["psp", "playlist", "music", "m3u8", "gui"]
+categories = ["multimedia", "gui"]
+
+[dependencies]
+walkdir = "2.3"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rusqlite = { version = "0.29", features = ["bundled"] }
+eframe = "0.27"
+egui = "0.27"
+rfd = "0.13"
+image = "0.24"
+tokio = { version = "1.36", features = ["rt", "macros"] }
+urlencoding = "2.1"
+lofty = "0.22.4"
+lazy_static = "1.4"
+rayon = "1"
+
+[dev-dependencies]
+criterion = "0.5"
